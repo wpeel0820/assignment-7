@@ -23,13 +23,13 @@ header {
 }
 .main-nav li {
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
     float: right;
 }
 .main-nav ul li:not(:first-child) a:after {
     content: "/";
     position: absolute;
-    margin-left: 7px;
+    margin-left: 15px;
     margin-top: 3px;
 }
 .top-logo {
@@ -37,6 +37,14 @@ header {
     display: inline-block;
     height: 100px;
     margin: 0px;
+}
+.hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+}
+.hidden:focus {
+    left: 0;
 }
 .staff {
     display: flex;
@@ -52,7 +60,7 @@ header {
     grid-column-gap: 0px;
     grid-row-gap: 30px;
     padding: 50px;
-    color: #03a3df;
+    color: #444444;
     }
     
     .derek { grid-area: 1 / 1 / 2 / 2; }
@@ -93,13 +101,19 @@ h1 {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    color: #03a3df;
+    color: #444444;
 }
 h2 {
     font-weight: bold;
     font-size: 24px;
-    color: #03a3df;
+    color: #444444;
     text-align: center;
+}
+h3 {
+    color: #444444
+}
+h4 {
+    color: #444444
 }
 .introduction {
     padding: 50px;
@@ -109,7 +123,8 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
-    color: #03a3df;
+    color: #444444
+    ;
     padding: 50px;
     }
     
